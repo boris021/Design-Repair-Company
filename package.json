@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/boris021/Design-Repair-Company#readme",
   "devDependencies": {
+    "browser-sync": "^2.26.7",
     "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "gulp-sass": "^4.1.0"
   }
 }
