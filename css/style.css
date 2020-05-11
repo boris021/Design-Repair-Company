@@ -345,9 +345,12 @@ template {
 *, *:before, *:after {
   box-sizing: border-box; }
 
+html {
+  font-size: 14px; }
+
 body {
   font-family: 'Futura Book', sans-serif;
-  font-size: 14px; }
+  font-size: 1rem; }
 
 .section-title {
   text-align: center;
@@ -380,13 +383,14 @@ body {
 
 .logo {
   color: #E3B873;
+  font-size: 1rem;
   text-transform: uppercase; }
 
 .nav__item {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-  margin-right: 40px;
+  margin-right: 2.80rem;
   transition: 0.2s; }
   .nav__item:hover {
     color: #E3B873; }
@@ -395,7 +399,7 @@ body {
   color: #E3B873; }
 
 .contacts__phone {
-  margin-right: 45px; }
+  margin-right: 3.2rem; }
 
 .hero {
   position: relative;
@@ -442,10 +446,10 @@ body {
       margin-left: 12px; }
   .hero__content {
     position: relative;
-    max-width: 670px; }
+    max-width: 47.86rem; }
   .hero__text {
     max-width: 500px;
-    font-size: 22px; }
+    font-size: 1.57rem; }
   .hero__button {
     margin-right: 20px; }
 
@@ -474,6 +478,67 @@ body {
   margin: 0;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
-  font-size: 40px; }
+  font-size: 2.86rem; }
   .title--primary {
     color: #E3B873; }
+
+@media screen and (min-width: 1200px) {
+  .hero__content {
+    margin-left: 4.28rem; }
+  .logo {
+    margin-right: 1rem; }
+  .nav__item {
+    margin-right: 2rem; }
+  .contacts__phone {
+    margin-right: 1.4rem; }
+  .contacts__button {
+    margin-right: -5rem; } }
+
+@media screen and (max-width: 1200px) {
+  .hero__content {
+    max-width: 47.86rem;
+    margin-left: 4.28rem; }
+  .logo {
+    margin-right: 1.7rem; }
+  .nav {
+    display: none; }
+  .contacts__phone {
+    margin-right: 1.7rem;
+    color: #fff;
+    text-decoration: none; } }
+
+@media screen and (max-width: 991px) {
+  .logo {
+    margin-left: 1.7rem; }
+  .contacts__button {
+    display: none; }
+  .contacts__phone {
+    margin-right: 0; } }
+
+@media screen and (max-width: 767px) {
+  .hero__instagram {
+    display: none; }
+  .hero__content {
+    margin-left: 0; }
+  .logo {
+    margin-left: 0; } }
+
+@media screen and (max-width: 575px) {
+  .hero__scroll-down {
+    display: none; }
+  .hero__title {
+    font-size: 1.65rem;
+    line-height: 130%;
+    letter-spacing: 0.08rem;
+    max-width: 27.3rem;
+    margin-bottom: 1rem; }
+  .hero__text {
+    line-height: 130%;
+    font-size: 1.29rem;
+    margin-bottom: 2.28rem; }
+  .hero__button {
+    display: block;
+    min-width: 100%;
+    margin-bottom: 1.8rem; }
+  .logo {
+    margin-left: -1.5rem; } }
