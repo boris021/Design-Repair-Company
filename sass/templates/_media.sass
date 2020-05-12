@@ -2,16 +2,24 @@
   .hero
     &__content
       margin-left: 4.28rem
+      &__button
+        padding: 0rem 1.77rem
+        font-size: 2.86rem
+        font-weight: normal
+        line-height: 135.84%
   .logo
-    margin-right: 1rem
+    margin-left: -1.771rem
+    letter-spacing: 0.029rem
   .nav
+    margin-right: -3rem
     &__item
-      margin-right: 2rem
+      margin-right: 2.65rem
   .contacts
     &__phone
-      margin-right: 1.4rem
+      margin-right: 3.214rem
+      padding-left: 1.642rem
     &__button
-      margin-right: -5rem
+      margin-right: -6rem
 @media screen and ( max-width: 1200px )
   .hero
     &__content
@@ -34,31 +42,49 @@
       display: none
     &__phone
       margin-right: 0
-@media screen and ( max-width: 767px )
-  .hero
+@media screen and ( max-width: 760px )
+  .row
+    align-items: center !important
+    flex-direction: column    
+  .types
+    &__card
+      margin-bottom: 5rem
+  .card
+    &__text
+      margin-left: 0
+    .hero
     &__instagram
       display: none
     &__content
       margin-left: 0  
   .logo
     margin-left: 0
+
 @media screen and ( max-width: 575px )
+  .container
+    width: 90%
   .hero
     &__scroll-down
       display: none
     &__title
       font-size: 1.65rem
       line-height: 130%
-      letter-spacing: 0.08rem
       max-width: 27.3rem
       margin-bottom: 1rem
     &__text
       line-height: 130%
       font-size: 1.29rem
-      margin-bottom: 2.28rem
+      margin-bottom: 2.60rem
     &__button
       display: block
       min-width: 100%
-      margin-bottom: 1.8rem
+      margin-bottom: 2rem
+      padding: 0rem 1.77rem
+      font-size: 0.93rem
+      font-weight: normal
+      line-height: 135%
+      height: 3.643rem
+      letter-spacing: 0.1px
   .logo
-    margin-left: -1.5rem
+    font-size: 0.857rem
+    letter-spacing: 0.036rem
