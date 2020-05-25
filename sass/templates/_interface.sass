@@ -1,3 +1,6 @@
+.home
+  text-decoration: none
+  color: $light
 .button
   font-size: 0.9rem
   padding: 0.9rem 1.6rem
@@ -26,22 +29,23 @@
   color: $light
   background-color: transparent
   border: none
-  border-bottom: 1px solid rgba(54, 54, 54, 0.3)
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15)
   padding: 0.5rem 0
-  &::placeholder
-    font-family: 'Futura Book', sans-serif
-    font-size: 1.285rem
-    color: $light
+  &--light
+    &::placeholder
+      font-family: 'Futura Book', sans-serif
+      font-size: 1.285rem
+      color: $light
 .policy
   &__checkbox
     opacity: 0
     visibility: hidden
-    &:checked +
+    &:checked ~
       .policy__label
         &::before
           background: $primary  url('../img/check.svg') no-repeat center
   &__label
-    font-size: 1.07rem
+    font-size: 1.142rem
     display: flex
     align-items: center
     &::before
@@ -53,4 +57,16 @@
       border-radius: 1px
       cursor: pointer
       margin-right: 0.6rem
-
+    &--center
+      justify-content: center
+label
+  position: relative
+  &.invalid
+    color: tomato
+    position: absolute
+    left: 0
+    top: 55px
+    color: red
+input
+  &.invalid
+    border-bottom: 1px solid tomato

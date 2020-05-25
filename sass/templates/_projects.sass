@@ -1,0 +1,55 @@
+.projects
+  padding-bottom: 30rem
+.section-title
+  &-big
+    font-size: 1.93rem
+    font-weight: normal
+    margin-bottom: 1.53rem
+    text-transform: uppercase
+    font-family: Yeseva One
+.swiper
+  &-slide
+    display: flex 
+    flex-wrap: wrap
+    margin-bottom: 5.715rem
+    &--photo
+      padding-left: 52px      
+    &__value
+      line-height: 1.428rem
+    &__text
+      flex-basis: 39%
+      margin-bottom: 1.7rem
+    &__heading     
+      font-size: 1.285rem 
+      line-height: 1.78rem
+      font-family: 'Yeseva One', cursive
+      color: $primary
+      text-transform: uppercase
+      font-weight: normal
+      margin-bottom: 0.34rem
+  &-pagination
+    &-bullet
+      background-color: rgba($light, 0.3)
+      &-active
+        background-color: $light
+  &-button
+    &-prev, &-next, &-prev2, &-next2
+      bottom: 0
+      top: auto
+      background-size: 42px
+      width: 42px
+      height: 14px
+      &::after
+        display: none
+    &-prev, &-prev2
+      left: 0
+      background: url('../img/aroow-prev.svg') no-repeat center
+    &-next, &-next2     
+      background: url('../img/aroow-next.svg') no-repeat center
+
+
+.swiper-container-horizontal>.swiper-pagination-bullets
+  width: auto
+  bottom: -1px
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet
+  margin: 0 22px

@@ -2,6 +2,15 @@
   box-sizing: border-box
 h1, p
   margin: 0
+input 
+  outline: none
+
+a:active, a:focus  
+  outline: none
+
+button:active, button:focus
+  outline: none
+
 html 
   font-size: 14px
 img
@@ -10,10 +19,58 @@ body
   font-family: 'Futura Book', sans-serif
   font-size: 1rem
 .section
+  &--dark
+    padding: 2.57rem 0px 0rem 0px
+    background: $dark
+    color: $light
+    &-progects
+      background: $dark url('../img/projects/bg-project.jpg') no-repeat
+      background-position: bottom
   &-title    
-    text-align: center
-    text-transform: uppercase
-    font-family: 'Yeseva One', cursive 
+    &__text
+      font-size: 1.285rem
+      line-height: 2.17rem
+      max-width: 31.57rem
+      font-weight: normal
+      margin-bottom: 2.4rem
+    &--left
+      text-align-last: left
+    &--light
+      color: $light
+    &__heading
+      font-size: 1.285rem 
+      text-transform: uppercase
+      font-family: 'Yeseva One', cursive
+      text-align: center
+      line-height: 138.6%    
+      margin-bottom: 0.9rem
+      &--primary
+        font-size: 1.928rem
+        text-align: left
+        color: $primary
+    &__word
+      font-size: 1.93rem
+      font-weight: normal
+      display: flex
+      align-items: center
+      &::after
+        content: ''
+        width: 92px
+        height: 1px
+        background-color: $primary
+        margin-left: 2rem   
+    &__step
+      font-size: 1.93rem
+      font-weight: normal
+      display: flex
+      align-items: center
+      &::after
+        content: ''
+        width: 87px
+        height: 1px
+        background-color: $primary
+        margin-left: 6.6rem
+
     &__image 
       display: flex
       justify-content: center
@@ -23,12 +80,16 @@ body
         width: 32px
         height: 2px
         background-color: $primary
-        margin: 0 10px
-        
+        margin: 0 10px        
 #top 
-  bottom: 0
+  bottom: 2%
+  right: 2%
+  width: 40px
+  height: 40px
+  border-radius: 50%
   cursor: pointer
   display: none
-  font-size: 150%
+  font-size: 20px
   position: fixed
-  right: 0
+  background: url(../img/top.svg) no-repeat center
+  border: 1px solid #E3B873

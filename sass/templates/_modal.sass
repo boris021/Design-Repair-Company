@@ -22,9 +22,9 @@
     overflow-x: hidden
     position: relative
     max-width: 36rem
-    max-height: 36.3rem
+    max-height: 36.143rem
     background: $dark url('../img/bg-lines.svg') no-repeat center
-    padding: 0.7rem 3.4rem 1.92rem 3.6rem 
+    padding: 0rem 3.4rem 1.92rem 3.6rem 
     color: $light
   &__close
     position: absolute
@@ -43,19 +43,27 @@
     line-height: 2rem
     font-weight: normal
     text-align: center
-    margin-bottom: 1.9rem
+    margin-bottom: 1.7rem
   &__form
     display: flex
     flex-direction: column
   &__input
-    margin-bottom: 3.2rem
-    &:last-of-type
-      margin-bottom: 0rem
+    &-group
+      position: relative
+      display: flex
+      flex-direction: column
+      margin-bottom: 3.282rem
+      &--bottom
+        position: relative
+        display: flex
+        flex-direction: column
+        margin-bottom: 0.2rem
   &__policy
+    position: relative
     font-size: 1.14rem
     font-weight: normal
-    margin-bottom: 2.7rem
-    &__label
+    margin-bottom: 2.9rem
+    &__label      
       letter-spacing: 0.5px
   &__button
     align-self: flex-end

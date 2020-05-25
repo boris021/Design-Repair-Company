@@ -1,8 +1,27 @@
 @media screen and ( max-width: 1920px ) 
+  .swiper-container-horizontal>.swiper-pagination-bullets
+    width: auto
+    bottom: 0px
+  .footer
+    &__iconm
+      display: none
+    &__icon
+      &--itemm
+        display: none
+    &__title
+      &-headfm
+        display: none
   .card-list
     &__mobile
       display: none
 @media screen and ( max-width: 1200px ) 
+  .swiper-container-horizontal>.swiper-pagination-bullets
+    width: auto
+    bottom: 0px
+  .footer
+    &__title
+      &-headfm
+        display: none
   .card-list
     &__mobile
       display: none
@@ -79,7 +98,7 @@
     &__dialog
       overflow: auto
       height: 100%
-      overflow-x:hidden
+      overflow-x: hidden
   .menu-logo
     &__link
       font-family: Futura Demi
@@ -87,9 +106,9 @@
       font-size: 1rem
       text-transform: uppercase
       text-decoration: none
-  .container
-    width: 90%
   .hero
+    &::after
+      display: none
     &__scroll-down
       display: none
     &__title
@@ -112,8 +131,21 @@
     letter-spacing: 0.036rem
   .types
     &__section-title
-      margin-bottom: 3rem
+      margin-top: 4.142rem
+      margin-bottom: 4.142rem
   .section-title
+    &-big
+      font-size: 1.57rem
+      margin-bottom: 1.5rem
+    &__text
+      font-size: 1rem
+      line-height: 158.48%
+      margin-bottom: 1.64rem
+      width: 21.78rem
+    &__word
+      font-size: 1.57rem
+      &::after
+        display: none
     &__heading
       font-size: 1.57rem
   .section-desing
@@ -160,3 +192,148 @@
       display: none
     &__mobile
       display: block
+  .section
+    &--step
+      display: none
+    &--dark
+      // padding: 30rem
+      background-position: bottom
+  .col-40
+    width: 100%
+    padding-right: 0
+  .col-60
+    width: 100%
+    margin-top: 0
+  .swiper
+    &-slide
+      display: flex
+      flex-wrap: wrap
+      margin-bottom: 5.015rem
+      &--photo
+        margin: 0
+        padding: 0
+      &__value
+        line-height: 1.3rem
+      &__text
+        flex-basis: 48%
+        margin-bottom: 1.1rem
+        font-weight: normal
+      &__heading
+        font-size: 1rem
+        line-height: 1.78rem
+        font-family: 'Yeseva One', cursive
+        color: $primary
+        text-transform: uppercase
+        font-weight: normal
+        margin-bottom: 0.64rem
+    &-button-next, &-button-prev
+      top: 220px
+    &-pagination
+      &-bullet
+        margin-left: 15px
+  .footer
+    background-image: none
+    &__map
+      margin: auto
+      width: 320px
+      height: 255px
+      margin-bottom: 0
+      padding-bottom: 4rem
+    &__title
+      margin-bottom: 3.714rem
+      color: $light
+    &__wrap
+      background: $dark
+      padding: 5.428rem 0
+      margin: 0
+      max-height: 100%
+    &__menu
+      display: none
+    &__input-group
+      flex-basis: 100%
+      margin-bottom: 4.528rem
+    &__button
+      width: 100%
+    &__policy
+      margin-top: -4.3rem
+      margin-bottom: 4.771rem
+    &__icon
+      display: none
+      margin-bottom: 0
+      padding-bottom: 0rem
+      &--itemmf
+        margin-right: 1.428rem
+        width: 39px
+        height: 39px
+        margin-bottom: 2.714rem
+    &__iconm      
+      display: flex
+      justify-content: center
+      margin-bottom: 0
+      padding-bottom: 0rem
+    &__iconf  
+      margin-bottom: 0
+      padding-bottom: 0rem     
+    &__title
+      &-headf
+        display: none
+        width: 20.285rem
+        font-size: 1.285rem
+        line-height: 138.6%
+        margin-bottom: 1.642rem
+      &-headfm
+        display: block
+        width: 20.285rem
+        font-size: 1.285rem
+        line-height: 138.6%
+        margin-bottom: 1.642rem
+  .input
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3)
+  .label--light
+    margin-bottom: -0.443rem
+  .policy
+    &__label--center
+      justify-content: flex-start
+  .control
+    position: relative
+    background-color: $dark
+    &__label
+      color: rgba(255, 255, 255, 0.5)
+    &__text
+      color: $light
+      margin-bottom: 1.857rem
+      font-size: 1rem
+      line-height: 169.8%
+    &__input-group
+      flex-basis: 100%
+      color: $light
+      border-bottom: 1px solid $light
+      margin-bottom: 4.5rem
+    &__policy
+      color: $light
+      margin-bottom: 4.43rem
+      margin-top: -3.428rem
+      flex-basis: auto
+    &__button
+      position: absolute
+      bottom: -23px
+      width: 85%
+  .section-title
+    mt0
+    &__heading
+      color: $dark
+  .card
+    &__text
+      &-team
+        padding: 1.3rem 0 0 0
+  .command
+    &__control
+      &--text
+        margin-top: 550px
+        color: $dark
+  .section
+    &__client
+      display: none 
+  .swiper-container-horizontal>.swiper-pagination-bullets
+    width: auto
+    bottom: 32px

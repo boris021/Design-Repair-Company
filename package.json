@@ -18,10 +18,10 @@
   "homepage": "https://github.com/boris021/Design-Repair-Company#readme",
   "devDependencies": {
     "browser-sync": "^2.26.7",
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1"
   },
   "dependencies": {
-    "gulp-autoprefixer": "^7.0.1",
     "gulp-sass": "^4.1.0"
   }
 }
